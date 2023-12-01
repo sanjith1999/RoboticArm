@@ -1,0 +1,64 @@
+  // RA.visualizeConfiguration();
+  // // INIT CONFIGURATION
+  // delay(2000);
+  // config_buf[0] = 90, config_buf[1]=130, config_buf[2]=130, config_buf[3]=30, config_buf[4]=90, config_buf[5]=180;
+  // RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(2000);      
+  
+  // // LIFTING CONFIGURATION
+  // config_buf[2]=150, config_buf[3]=105, config_buf[4]=5, config_buf[5]=130;
+  // RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);  
+      
+  // config_buf[1]=55;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);   
+     
+  // config_buf[5]=151;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);      
+
+  
+  // config_buf[1]=125, config_buf[2]=80, config_buf[3]=0, config_buf[4]=90;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);      
+  
+  // config_buf[0] = 45, config_buf[1]=125, config_buf[2]=80, config_buf[3]=0, config_buf[4]=90, config_buf[5]=151;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);      
+  
+  // config_buf[0] = 45, config_buf[2]=75;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);      
+  
+  // config_buf[5]=130;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(1000);      
+  
+  // config_buf[2]=95;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200);      
+  
+  // config_buf[0] = 90, config_buf[1]=130, config_buf[2]=130, config_buf[3]=30, config_buf[4]=5, config_buf[5]=180;
+  //   RA.setConfiguration(config_buf);
+  // while (!RA.moveArm())
+  //   delay(MID_DELAY); 
+  // delay(200); 
