@@ -25,7 +25,7 @@ public:
 };
 
 void configVisualizer(int* config);
-void inverseCalculation(bool inv_case);
+void inverseCalculation(bool inv_case); // true - Link 5 Vertical
 
 // GLOBAL VARIABLES
 int config_buf[J_COUNT];
@@ -49,23 +49,21 @@ void setup() {
   for (int j = 0; j < J_COUNT; j++)
     config_buf[j] = init_config[j];
 
+  // Inverse Kinematic Calculation
+  dest[0] = 22, dest[1] = 0, dest[2] = 0;
+  inverseCalculation(true);
+
+  dest[0] = 18.7, dest[1] = -18.7, dest[2] = 8.6;
+  inverseCalculation(false);
+
   // READING THE SERIAL MONITOR
   while (true)
     if (Serial.available() > 0) {
-
       // READING THE SERIAL MONITOR FOR SETTING ANGLE
       String inputString = Serial.readStringUntil('\n');
       String indexString = inputString.substring(0, 1);
       int index = indexString.toInt();
 
-      if (index < 4) {
-        String valueString = inputString.substring(2);  // Skip ": "
-        int value = valueString.toInt();
-        dest[index - 1] = value;
-      }
-      if (index == 4) {
-        inverseCalculation(true);
-      // }
 
       if (index < 7) {                                  // SETTING THE POSITION ONE BY ONE
         String valueString = inputString.substring(2);  // Skip ": "
